@@ -1,9 +1,33 @@
-\chapter{Design Rationale}
+\chapter{Design Rationale} % Jake [DONE]
+
+\section{Biofeedback}
+Biofeedback, a training technique that monitors bodily functions, teaches users to increase awareness of their physiological functions. This technique increases the user's feeling of virtual "presence." Apple HealthKit provides a central repository for health and fitnes data on iOS. It allows applications to communicate with the HealthKit store to access and share data. ResearchKit is open source software framework that simplifies application creation for medical research or for other research projects. It will allow us to track the user's heart rate natively in iOS.
+    
+\section{C\#}
+
+We are choosing C\# as our main scripting language as Unity Engine offers a primary scripting API in C\#. Also, our group's familiarity with C and C++ will make learning this new technology more efficient.
+
+\section{Event-Driven Architecture}
+
+By utilizing an event-driven architecture, we will promote the detection and reaction to events. This architecture is suitable for the nature of our design, which encompasses a loosely coupled structure. Based on users reaction to events displayed on our application, the core system will detect these reactions and modify the on-screen use. This will create a personalized experience for users, tailoring it to their needs. 
+
+\section{GitHub}
+
+We are choosing GitHub as our version control system due to our previous knowledge regarding its functionality. It will serve as the platform we use to collaborate and store code and core assets.
+
+\section{Google Cardboard}
+Google Cardboard technology was chosen due to the low cost of usage. It provides a more cost-effective solution to virtual reality hardware than many of the major competitors, while still giving a quality experience. By offloading the software requirements to a smartphone and keeping the hardware down to a cardboard frame, Google Cardboard lets the product scale more effectively among users and increases accessibility.
+    
+\section{Google VR SDK for Unity}
+
+Google VR provides SDKs for many popular development environments such as Android, iOS, Unity, and Unreal. These SDKs provide native APIs for key VR features like user input, controller support, and rendering. These can be used to build new VR experiences on Google Cardboard.
+
+\section{Unity Engine}
+
+Unity Engine will be our cross-platform game engine driving our application. It is the most widely-used VR development platform. Unity's highly optimized rendering pipeline will expedite our development process. Additionally, Unity supports the low-level APIs Metal on iOS and Vulkan on Android. Its build settings allow applications to be built for iOS as an Xcode project.
 
 \section{Virtual Reality}
-    A virtual reality interface was chosen due to the immersive experience it provides. Users of the system are practicing for real-life situations, and in order to get the most out of the experience, the system must be as close to real life as possible. Virtual reality provides the closest experience to reality, without any keyboard controls to interface through. Moving through a virtual environment provides valuable experience for reacting to the real-life situations this program hopes to train people in.
-\section{Google Cardboard}
-    Google Cardboard technology was chosen due to the low cost of usage, providing a more cost-effective solution to virtual reality hardware than many of the major competitors, while still giving a quality experience. By offloading the software requirements to a smartphone and keeping the hardware down to a cardboard frame, Google Cardboard lets the product scale more effectively among users and increases accessibility.
-\section{Biofeedback}
+We are choosing a virtual reality interface due to the immersive experience it provides. Users of the system are practicing for real-life situations. In order to get the most out of the experience, the system must be as close to real life as possible. Virtual reality provides the closest experience to reality, without any keyboard controls to interface through. Moving through a virtual environment provides valuable experience for reacting to the real-life situations this program hopes to train people in.
 
-\section{Event-Based Architecture}
+\section{Xcode}
+Xcode will function as our IDE. It includes a suite of development tools for creating iOS applications. Unity's support for building to Xcode will make our development process seamless.

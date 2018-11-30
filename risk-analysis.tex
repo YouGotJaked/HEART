@@ -1,4 +1,4 @@
-\chapter{Risk Analysis} % Jake
+\chapter{Risk Analysis} % Jake [DONE]
 
 \section{Risk Analysis Table}
 
@@ -20,31 +20,38 @@ Our team identified the most common and severe risks during the software develop
     \textbf{Mitigation Strategies} \\
     \midrule
     Bugs &
-    Must allocate time dedicated to debugging &
-    1 &
+    \makecell[l]{Must allocate time \\
+        dedicated to debugging } &
+    1.0 &
     2 &
-    2 &
-    \makecell[l]{Maintain thorough documentation of code \\ Perform rigorous unit testing} \\
+    2.0 &
+    \makecell[l]{Maintain thorough documentation of code \\        Perform rigorous unit testing} \\
     \midrule
-    Misunderstood requirements &
-    System requirements are not met &
+    \makecell[l]{Misunderstood \\ 
+        requirements } &
+    \makecell[l]{System requirements \\
+        are not met } &
     0.2 &
     9 &
     1.8 &
     \makecell[l]{Perform code reviews \\ 
         Frequent, effective communication \\ 
-        Allow customer to provide feedback} \\
-        \midrule
-    Technical limitations &
-    Unable to implement certain requirements &
+        Allow users to provide feedback } \\
+    \midrule
+    \makecell[l]{Technical \\
+        limitations } &
+    \makecell[l]{Unable to implement \\
+        certain requirements } &
     0.5 &
     3 &
     1.5 &
     \makecell[l]{Familiarize ourselves with technologies used \\
         Be honest regarding technical skills} \\
     \midrule
-    Compatibility issues &
-    Components do not function together properly &
+    \makecell[l]{Compatibility \\
+        issues } &
+    \makecell[l]{Components do not \\ 
+        function together properly } &
     0.3 &
     4 &
     1.2 &
@@ -52,11 +59,12 @@ Our team identified the most common and severe risks during the software develop
         Use git as version control system to track changes} \\
     \midrule
     Time & 
-    System not complete by deadline & 
+    \makecell[l]{System not complete \\
+        by deadline } & 
     0.1 &
     8 &
     0.8 &
-    \makecell[l]{Follow Gantt chart \\ 
+    \makecell[l]{Follow development timeline \\ 
         Schedule weekly team meetings \\ 
         Re-evaluate necessity of features} \\
     \bottomrule
