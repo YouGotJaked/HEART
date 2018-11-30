@@ -1,0 +1,65 @@
+\chapter{Risk Analysis} % Jake
+
+\section{Risk Analysis Table}
+
+Our team identified the most common and severe risks during the software development process. Table \ref{table:risk-anal} presents these risks, along with their potential consequences and solutions. The impact of each risk results from the product of their respective probability and severity. The risks are listed from highest to lowest impact.   
+
+\begin{table}[h!]
+\centering
+\caption{Risk Analysis}
+\label{table:risk-anal}
+\vspace{5mm}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}llllll@{}}
+\toprule
+\textbf{Name of Risk} &
+    \textbf{Consequences} &
+    \textbf{Probability} &
+    \textbf{Severity (0-10)} &
+    \textbf{Impact} &
+    \textbf{Mitigation Strategies} \\
+    \midrule
+    Bugs &
+    Must allocate time dedicated to debugging &
+    1 &
+    2 &
+    2 &
+    \makecell[l]{Maintain thorough documentation of code \\ Perform rigorous unit testing} \\
+    \midrule
+    Misunderstood requirements &
+    System requirements are not met &
+    0.2 &
+    9 &
+    1.8 &
+    \makecell[l]{Perform code reviews \\ 
+        Frequent, effective communication \\ 
+        Allow customer to provide feedback} \\
+        \midrule
+    Technical limitations &
+    Unable to implement certain requirements &
+    0.5 &
+    3 &
+    1.5 &
+    \makecell[l]{Familiarize ourselves with technologies used \\
+        Be honest regarding technical skills} \\
+    \midrule
+    Compatibility issues &
+    Components do not function together properly &
+    0.3 &
+    4 &
+    1.2 &
+    \makecell[l]{Modularize code (loose coupling, high cohesion) \\
+        Use git as version control system to track changes} \\
+    \midrule
+    Time & 
+    System not complete by deadline & 
+    0.1 &
+    8 &
+    0.8 &
+    \makecell[l]{Follow Gantt chart \\ 
+        Schedule weekly team meetings \\ 
+        Re-evaluate necessity of features} \\
+    \bottomrule
+\end{tabular}%
+}
+\end{table}
