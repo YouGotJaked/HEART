@@ -1,15 +1,20 @@
-\documentclass{heart}
+\documentclass{scu-thesis}
 \usepackage{amsmath}	% for advanced typesetting of mathematics
 \usepackage{graphicx}	% for including graphics
-\usepackage{natbib}	% for better citation styles
+\usepackage{natbib}	    % for better citation styles
 \usepackage{txfonts}	% for using the Times-Roman font
+\usepackage{booktabs}   % for table styling
+\usepackage{makecell}   % for multiple line table cells
+\usepackage{multirow}   % for multiple row table cells
 
 % These must be set first ... the rest of the thesis commands rely on them.
 
 \author{Jake Day}
 \author{Yutong Li}
+\author{Sam Rietz}
+\author{Brendan Watamura}
 \title{H.E.A.R.T.}
-\department{Department of Computer Science and Engineering}
+\department{Department of Computer Engineering}
 \degree{Bachelor of Science in Computer Science and Engineering}
 
 % Only bachelor's theses should have multiple authors and/or be from
@@ -31,9 +36,20 @@
 
 \tableofcontents
 \listoffigures
+\listoftables
 
 \mainmatter
 \include{introduction}
+\include{requirements}
+\include{use-cases}
+\include{activity-diagram}
+\include{conceptual-model}
+\include{technologies-used}
+\include{architectural-diagram}
+\include{design-rationale}
+\include{test-plan}
+\include{risk-analysis}
+\include{development-timeline}
 
 \backmatter
 \end{document}
